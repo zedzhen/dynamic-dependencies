@@ -4,7 +4,7 @@
 Dependencies based on `dependency-groups'.
 
 ### Usage:
-d `dynamic_dependencies[setuptools]` to build-system.requires (in the pyproject.toml file)
+Add `dynamic_dependencies[setuptools]` to build-system.requires (in the pyproject.toml file)
 ```toml
 [build-system]
 requires = [
