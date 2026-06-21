@@ -1,0 +1,5 @@
+column_width = 120
+indent = 4
+generate_python_version_classifiers = false
+table_format = "long"
+sub_table_spacing = "\n\n"
