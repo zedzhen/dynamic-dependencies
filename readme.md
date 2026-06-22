@@ -28,10 +28,9 @@ If you use a different backend for the build:
 ```toml
 [tool.dynamic_dependencies]
 require = "name1"
-optional = {
-    "grp1" = "name2",
-    "grp2" = "name3"
-}
+[tool.dynamic_dependencies.optional]
+grp1 = "name2"
+grp2 = "name3"
 ```
 
 The group `name1` will be added to the required dependencies.
@@ -69,10 +68,9 @@ dynamic = ["dependencies", "optional-dependencies"]
 ```toml
 [tool.dynamic_dependencies]
 require = "name1"
-optional = {
-    "grp1" = "name2",
-    "grp2" = "name3"
-}
+[tool.dynamic_dependencies.optional]
+grp1 = "name2"
+grp2 = "name3"
 ```
 
 Группа `name1` будет добавлена в обязательные зависимости.

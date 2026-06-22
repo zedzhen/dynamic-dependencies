@@ -1,6 +1,6 @@
 ## v1.0.2 (unreleased)
 
-* There are no changes yet
+* fix example in readme
 
 ## v1.0.1 (22.06.2026)
 
