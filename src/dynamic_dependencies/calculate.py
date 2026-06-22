@@ -12,4 +12,4 @@ def dependencies(config: Config) -> list[str] | None:
 def optional_dependencies(config: Config) -> dict[str, list[str]] | None:
     if config.optional is None:
         return None
-    return {key: config.resolve(value) for key, value in config.optional}
+    return {key: config.resolve(value) for key, value in config.optional.items()}
