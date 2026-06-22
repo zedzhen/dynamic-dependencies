@@ -4,21 +4,25 @@
 Dependencies based on `dependency-groups'.
 
 ### Usage:
-Add `dynamic_dependencies[setuptools]` to build-system.requires (in the pyproject.toml file)
+Add `dynamic_dependencies[setuptools]` to `build-system.requires` (in the `pyproject.toml` file).
+In the `project.dynamic` list, add `dependencies` (if you define `tool.dynamic_dependencies.require`)
+and/or `optional-dependencies` (if you define `tool.dynamic_dependencies.optional`).
 ```toml
 [build-system]
 requires = [
   "setuptools>=81.0.0",
   "dynamic_dependencies[setuptools]~=1.0",
 ]
+[project]
+dynamic = ["dependencies", "optional-dependencies"]
 ```
 
 If you use a different backend for the build:
-1. Add `dynamic_dependencies` instead of `dynamic_dependencies[setuptools]`
-2. Read the configuration from `pyproject.toml` `dynamic_dependencies.Config.from_pyproject`
+1. Add `dynamic_dependencies` instead of `dynamic_dependencies[setuptools]`.
+2. Read the configuration from `pyproject.toml` `dynamic_dependencies.Config.from_pyproject`.
 3. Get the dependency lists by calling `dynamic_dependencies.dependencies` and `dynamic_dependencies.optional_dependencies'.
 4. Write it down in the distribution information.
-5. *If this is a public builder, create a PR/issue to add
+5. *If this is a public builder, create a PR/issue to add.
 
 ### configuration:
 ```toml
@@ -40,21 +44,25 @@ The group `name3` will be added to the optional dependencies as `grp2` (`...[grp
 Зависимости основанные на `dependency-groups`.
 
 ### Использование:
-Добавьте `dynamic_dependencies[setuptools]` в build-system.requires (в файл pyproject.toml)
+Добавьте `dynamic_dependencies[setuptools]` в `build-system.requires` (в файл `pyproject.toml`).
+В список `project.dynamic` добавьте `dependencies` (если определяете `tool.dynamic_dependencies.require`)
+и/или `optional-dependencies` (если определяете `tool.dynamic_dependencies.optional`).
 ```toml
 [build-system]
 requires = [
   "setuptools>=81.0.0",
   "dynamic_dependencies[setuptools]~=1.0",
 ]
+[project]
+dynamic = ["dependencies", "optional-dependencies"]
 ```
 
 Если вы используете другой бекенд для сборки:
-1. Добавьте `dynamic_dependencies`, вместо `dynamic_dependencies[setuptools]`
-2. Прочтите конфигурацию из `pyproject.toml` `dynamic_dependencies.Config.from_pyproject`
+1. Добавьте `dynamic_dependencies`, вместо `dynamic_dependencies[setuptools]`.
+2. Прочтите конфигурацию из `pyproject.toml` `dynamic_dependencies.Config.from_pyproject`.
 3. Получите списки зависимостей вызвав `dynamic_dependencies.dependencies` и `dynamic_dependencies.optional_dependencies`.
 4. Запишите в информацию о дистрибутиве.
-5. *Если это публичный сборщик, создайте PR/issue на добавление
+5. *Если это публичный сборщик, создайте PR/issue на добавление.
 
 ### конфигурация:
 
