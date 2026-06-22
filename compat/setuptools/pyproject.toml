@@ -22,7 +22,7 @@ email = "pypi@zedzhen.ru"
 gitversion_simple = "dynamic_dependencies.integrations.setuptools_:finalize_distribution_options"
 
 [project.urls]
-source = "https://github.com/zedzhen/dynamic_dependencies"
+source = "https://github.com/zedzhen/dynamic-dependencies"
 
 [tool.gitversion_simple]
 vcs_root = "../.."

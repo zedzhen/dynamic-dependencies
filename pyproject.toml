@@ -21,7 +21,7 @@ name = "Ярыкин Евгений"
 email = "pypi@zedzhen.ru"
 
 [project.urls]
-source = "https://github.com/zedzhen/dynamic_dependencies"
+source = "https://github.com/zedzhen/dynamic-dependencies"
 
 [dependency-groups]
 dev = [
