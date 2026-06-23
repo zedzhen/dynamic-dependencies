@@ -1,7 +1,7 @@
 [build-system]
 requires = [
     "dependency-groups~=1.3",
-    "gitversion-simple[setuptools]~=2.0",
+    "gitversion-simple[setuptools]>=2,<4",
     "setuptools~=82.0",
     "tomli~=2.0; python_version<'3.11'",
     "typing-extensions~=4.14",
