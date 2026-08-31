@@ -26,7 +26,7 @@ source = "https://github.com/zedzhen/dynamic-dependencies"
 [dependency-groups]
 dev = [
     "black~=26.5",
-    "build==1.5.*",
+    "build>=1.5,<1.7",
     "isort~=8.0",
     "pre-commit~=4.6",
     "pyproject-fmt~=2.25",
